@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>text0r</title>
+  </head>
+  <body>
+      <div class="container" style="max-width: 100%;">
+        <div class="row">
+            <!-- <div class="col-4 pr-0" style="border-right: 1px solid black; height: 100%;">
+                <div class="card-header">
+                    Conversations
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        LOL
+                    </li>
+                    <li class="list-group-item">
+                        Nothing
+                    </li>
+                    <li class="list-group-item">
+                        Here
+                    </li>
+                    <li class="list-group-item">
+                        Yet
+                    </li>
+                  </ul>
+                  <div style="height: 100%;"></div>
+            </div> -->
+            <div class="col-12 p-0">
+                <div class="card-header">
+                    Messages
+                </div>
+                <div class="card-dec rounded-1 py-4" id="messages" style="overflow-y: scroll;"></div>
+            </div>
+        </div>
+
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="row py-4" style="border-top: 1px solid #ced4da; position: fixed; bottom: 0; width: 100%;">
+                <div class="col-10">
+                    <div class="input-group" style="padding-bottom: 8px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="min-width: 90px;">From:</span>
+                        </div>
+                        <input type="text" id="senderNumber" class="form-control" id="senderNumber">
+                    </div>
+                    <div class="input-group" style="padding-bottom: 8px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="min-width: 90px;">To:</span>
+                        </div>
+                        <input type="text" id="messageRecipient" class="form-control" id="recipientNumber">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" style="min-width: 90px;">Message</span>
+                        </div>
+                        <textarea id="messageText" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-lg btn-block"
+                        style="height: 100%;"
+                        onclick="sendIt()"
+                    >
+                        Send
+                    </button>
+                </div>
+            </div>
+    
+        </nav>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="text0r.js"></script>
+  </body>
+</html>
